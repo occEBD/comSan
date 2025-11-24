@@ -3,7 +3,7 @@
 > It **could** be in a broken state, documentation is written by AI to give **ME** an overview.
 > I will rework SOME of this from the start, I don't know if this is vibecoded too.... so.... yeah.
 
-> [!INFO]
+> [!NOTE]
 > PROJECTID: 0N25-JAVA 
 > PROJECTND: occEBD
 
