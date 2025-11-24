@@ -1,0 +1,40 @@
+# ===== Command Sanitizer Configuration =====
+# Enhanced with Geyser (Bedrock Edition) and ViaConnect (cross-version) support
+
+# Security Settings
+# ----------------
+
+# Should shell separators (;|&`$()) be escaped to spaces instead of blocking?
+# Recommended: true for less strict enforcement, false for maximum security
+escape-separators: true
+
+# Allow URLs in commands?
+# Bedrock clients may paste URLs more frequently - adjust based on your needs
+# Recommended: false for security, true if you trust your players
+allow-urls: false
+
+# Maximum command length (in characters)
+# Protects against DoS attacks and extremely long payloads
+# Bedrock clients typically send shorter commands, but mobile paste could exceed this
+# Default: 512 (reasonable for most commands)
+# Increase if you have plugins with very long command arguments
+max-command-length: 512
+
+
+# Cross-Platform Compatibility
+# ----------------------------
+
+# Strip Bedrock Edition formatting codes (§ codes)?
+# Bedrock clients may include § formatting codes that Java doesn't use
+# Set to 'true' if you want to remove them, 'false' to preserve them
+# Recommended: false (preserve them, they're harmless and allow color on Bedrock)
+strip-bedrock-formatting: false
+
+
+# User Messages
+# -------------
+
+# Message shown to players when their command is blocked
+# Use § for color codes (§c = red, §e = yellow, etc.)
+# \n creates a new line
+blocked-message: "§cBlocked by CommandSanitizer.\n§eSuspicious content detected in your command.\n§7If you believe this is an error, contact an admin."
